@@ -1,0 +1,106 @@
+html,
+body {
+  background-color: #eee;
+  height: 100%;
+}
+
+.header {
+  background-color: #1565c0;
+  padding: 20px;
+  text-align: center;
+
+  & .title {
+    color: #fff;
+  }
+}
+
+.answer {
+  text-align: center;
+
+  & .card {
+    padding: 20px 0;
+  }
+
+  & .columns {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  & .button {
+    // animation-direction: normal; //alternate
+    // animation-duration: 2s;
+    // animation-iteration-count: infinite;
+    //animation-name: changeSize;
+    //border: solid 1px #e0e0e0;
+    border-radius: 100%;
+    box-shadow: 10px 10px 20px -11px rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 24px;
+    padding: 100px;
+    position: relative;
+    transition: all 0.5s ease;
+
+    & span {
+      position: absolute;
+    }
+
+    &.yes {
+      //animation-name: changeYesBgColor;
+      background-color: #0288d1;
+
+      &:hover {
+        background-color: rgba(2, 136, 209, 0.8);
+        padding: 105px;
+      }
+    }
+
+    &.no {
+      background-color: #e53935;
+
+      &:hover {
+        background-color: rgba(229, 57, 53, 0.8);
+        padding: 105px;
+      }
+    }
+  }
+
+  &.section {
+    padding: 1.5rem;
+  }
+}
+
+@keyframes changeSize {
+  from {
+    padding: 90px;
+  }
+
+  to {
+    padding: 100px;
+  }
+}
+
+@keyframes changeYesBgColor {
+  0% {
+    background-color: #4bbffd;
+  }
+
+  20% {
+    background-color: #5fc6fd;
+  }
+
+  40% {
+    background-color: #72ccfe;
+  }
+
+  60% {
+    background-color: #86d3fe;
+  }
+
+  80% {
+    background-color: #99dafe;
+  }
+
+  100% {
+    background-color: #ade1fe;
+  }
+}
