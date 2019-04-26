@@ -12,7 +12,6 @@ import { StaticQuery, graphql } from "gatsby"
 import "bulma"
 import "../styles/index.scss"
 import Header from "./header"
-import { Provider } from "../store"
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,10 +26,8 @@ const Layout = ({ children }) => (
     `}
     render={() => (
       <>
-        <Provider>
-          <Header />
-          <main>{children}</main>
-        </Provider>
+        <Header />
+        <main>{children}</main>
       </>
     )}
   />

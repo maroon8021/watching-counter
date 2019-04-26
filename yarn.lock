@@ -4889,6 +4889,13 @@ gatsby-plugin-eslint@^2.0.4:
   resolved "https://registry.yarnpkg.com/gatsby-plugin-eslint/-/gatsby-plugin-eslint-2.0.4.tgz#24bed84e9059310332a6fbfd3a41406d46755a29"
   integrity sha512-4aqUf+0NZ9pTE69tq2TNKPk0JHkMkjWB1Pd7r9k+LZMFUXRR2irxUQF2UpFoCCsktrsprb/5xqnGvoV2a2CH1Q==
 
+gatsby-plugin-layout@^1.0.15:
+  version "1.0.15"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.0.15.tgz#bb46eacd0d38d1a60ed6e423f624d899486f7830"
+  integrity sha512-hAdnwnnc2kTO/bJoi8uQXPrT/+XnkAYXccCAMAzs4bG19f93IrXMG1QQPEoB0rH6AMYC+pgUXYcOQXowWfoq2w==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+
 gatsby-plugin-manifest@^2.0.29:
   version "2.0.29"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.0.29.tgz#ce83b0ef1aa2d74b9027c3bdb26be2fbd25ef1bc"
