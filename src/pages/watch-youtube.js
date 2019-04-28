@@ -7,7 +7,7 @@ const WatchYoutube = () => {
   const { state, dispatch } = useContext(Store)
   // eslint-disable-next-line no-console
   console.log(`Current store ${state}`)
-  if (state.answeredCount === 0) {
+  if (!state.isStarted) {
     navigate("/")
   }
   return (

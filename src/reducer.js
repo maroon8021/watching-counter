@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 const reducer = (state = {}, action) => {
   switch (action.type) {
-    case "ADD_ALL_CPUNT":
+    case "ADD_ALL_COUNT":
       return {
         ...state,
         allCount: 1,
@@ -20,6 +20,11 @@ const reducer = (state = {}, action) => {
       return {
         ...state,
         TVCount: 1,
+      }
+    case "START_QUESTIONNAIRE":
+      return {
+        ...state,
+        isStarted: true,
       }
     default:
       return state

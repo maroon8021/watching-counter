@@ -6,6 +6,7 @@ const initialState = {
   answeredCount: 0,
   youtubeCount: 0,
   TVCount: 0,
+  isStarted: false,
 }
 // allCount can be come from GSS data
 

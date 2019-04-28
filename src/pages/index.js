@@ -18,6 +18,7 @@ const IndexPage = () => {
                   <button
                     className="button yes"
                     onClick={() => {
+                      dispatch({ type: "START_QUESTIONNAIRE" })
                       dispatch({ type: "ADD_ANSWER_COUNT" })
                     }}
                   >
@@ -27,7 +28,12 @@ const IndexPage = () => {
               </div>
               <div className="column">
                 <Link to="/page-2/">
-                  <button className="button no">
+                  <button
+                    className="button no"
+                    onClick={() => {
+                      dispatch({ type: "START_QUESTIONNAIRE" })
+                    }}
+                  >
                     <span>No</span>
                   </button>
                 </Link>
